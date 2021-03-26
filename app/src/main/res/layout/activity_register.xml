@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_register_activity">
+
+        <ImageView
+            android:id="@+id/ivLogoRegisterActivity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/icon_circle_logo_app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDeskripsiRegisterActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/deskripsi_register"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogoRegisterActivity" />
+
+        <EditText
+            android:id="@+id/etNoTelp"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:drawableStart="@drawable/icon_telephone"
+            android:ems="10"
+            android:hint="@string/no_telp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeskripsiRegisterActivity" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_email"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNoTelp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_password"
+            android:drawableEnd="@drawable/icon_show_password"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_password"
+            android:drawableEnd="@drawable/icon_show_password"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="331dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etConfirmPassword" />
+
+        <TextView
+            android:id="@+id/tvAtauMasukDengan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/masuk_dengan"
+            android:textAlignment="center"
+            android:textColor="#8C8C8C"
+            android:textSize="12sp"
+            app:drawableEndCompat="@drawable/vector_line"
+            app:drawableStartCompat="@drawable/vector_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+        <ImageButton
+            android:id="@+id/imagebtnGoogleAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_white_shadow"
+            android:paddingStart="0dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/icon_google"
+            app:layout_constraintEnd_toStartOf="@+id/imagebtnAppleAccount"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAtauMasukDengan" />
+
+        <ImageButton
+            android:id="@+id/imagebtnAppleAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_white_shadow"
+            android:paddingStart="0dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="11dp"
+            android:src="@drawable/icon_apple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAtauMasukDengan" />
+
+        <ImageButton
+            android:id="@+id/imagebtnGithubAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_white_shadow"
+            android:paddingStart="0dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="7dp"
+            android:src="@drawable/icon_github"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imagebtnAppleAccount"
+            app:layout_constraintTop_toBottomOf="@+id/tvAtauMasukDengan" />
+
+        <TextView
+            android:id="@+id/tvSudahPunyaAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/sudah_punya_akun"
+            android:textColor="@color/colorMain"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvLogin"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagebtnAppleAccount" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="132dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/login"
+            android:textColor="@color/colorMain"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagebtnAppleAccount" />
+
+        <TextView
+            android:id="@+id/tvEndLayoutRegisterActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSudahPunyaAkun" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

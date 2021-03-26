@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_login_activity">
+
+        <ImageView
+            android:id="@+id/ivLogoLoginActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/icon_circle_logo_app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvAppNameMainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogoLoginActivity" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:drawableStart="@drawable/icon_email"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppNameMainActivity" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:drawableStart="@drawable/icon_password"
+            android:drawableEnd="@drawable/icon_show_password"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="331dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <TextView
+            android:id="@+id/tvLupaPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/lupa_password"
+            android:textColor="#FF6D3F"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <TextView
+            android:id="@+id/tvBelumPunyaAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/belum_punya_akun"
+            android:textColor="@color/colorMain"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.665"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLupaPassword" />
+
+        <TextView
+            android:id="@+id/tvDaftarAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/daftar_akun"
+            android:textColor="@color/colorMain"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvBelumPunyaAkun"
+            app:layout_constraintTop_toBottomOf="@+id/tvLupaPassword" />
+
+        <TextView
+            android:id="@+id/tvEndLayoutRegisterActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:text=""
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBelumPunyaAkun" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
