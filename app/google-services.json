@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "773995451708",
+    "project_id": "easystock-cfa22",
+    "storage_bucket": "easystock-cfa22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773995451708:android:4caa5bd8176049fdd97a39",
+        "android_client_info": {
+          "package_name": "com.example.easystock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773995451708-5ckj2fat98dsrhe8ov4u6chqaqvmq397.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.easystock",
+            "certificate_hash": "de97966cb4882b039690694f19435a23c0cbee53"
+          }
+        },
+        {
+          "client_id": "773995451708-vgg3ka86iigbdpbl2sc90ttva1bsbk0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYT-ggkreo9J5JHDu9LoytIIfbbWUau2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773995451708-vgg3ka86iigbdpbl2sc90ttva1bsbk0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

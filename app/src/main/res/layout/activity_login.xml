@@ -38,7 +38,7 @@
             app:layout_constraintTop_toBottomOf="@+id/ivLogoLoginActivity" />
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etEmailLoginActivity"
             android:layout_width="331dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
@@ -51,22 +51,32 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvAppNameMainActivity" />
 
-        <EditText
-            android:id="@+id/etPassword"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayoutLoginActivity"
             android:layout_width="331dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:drawableStart="@drawable/icon_password"
-            android:drawableEnd="@drawable/icon_show_password"
-            android:ems="10"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:textColorHint="@color/colorHint"
+            app:hintEnabled="false"
+            app:passwordToggleDrawable="@drawable/show_password_selector"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorHint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+            app:layout_constraintTop_toBottomOf="@+id/etEmailLoginActivity">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPasswordLoginActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/icon_password"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorHint"
+                android:ems="10">
 
-        <Button
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
             android:id="@+id/btnLogin"
             android:layout_width="331dp"
             android:layout_height="57dp"
@@ -79,7 +89,7 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLayoutLoginActivity" />
 
         <TextView
             android:id="@+id/tvLupaPassword"
