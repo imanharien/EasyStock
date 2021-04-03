@@ -50,6 +50,19 @@
             app:layout_constraintTop_toBottomOf="@+id/tvDeskripsiRegisterActivity" />
 
         <EditText
+            android:id="@+id/etUsernameRegisterActivity"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/account_box"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNoTelpRegisterActivity" />
+
+        <EditText
             android:id="@+id/etEmailRegisterActivity"
             android:layout_width="331dp"
             android:layout_height="wrap_content"
@@ -61,7 +74,7 @@
             android:textColorHint="@color/colorHint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etNoTelpRegisterActivity" />
+            app:layout_constraintTop_toBottomOf="@+id/etUsernameRegisterActivity" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etPasswordLayoutRegisterActivity"

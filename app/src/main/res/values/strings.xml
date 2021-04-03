@@ -13,6 +13,7 @@
     <!--    Register Activity-->
     <string name="deskripsi_register">Buatlah Akunmu\ndan Mulai Mencari Produk!</string>
     <string name="no_telp">\ No Telepon</string>
+    <string name="username">\ Username</string>
     <string name="confirm_password">\ Confirm Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="masuk_dengan">\ Atau Masuk dengan\ </string>
